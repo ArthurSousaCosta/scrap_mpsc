@@ -97,7 +97,7 @@ for r in range(len(results)):
             new_name = f'{num_processo}.pdf'
             with open(f'{download_dir}\{new_name}', 'wb') as f:
                 f.write(response.content)
-            results[r][7] = download_dir+'/'+new_name
+            results[r][7] = download_dir+'\'+new_name
         except:
             continue
         break
